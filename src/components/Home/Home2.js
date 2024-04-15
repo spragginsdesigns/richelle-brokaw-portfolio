@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/rb-avatar.png";
+import myImg from "../../Assets/rb-photographer-circle.png";
 import Tilt from "react-parallax-tilt";
 import { AiFillFacebook } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -15,35 +15,39 @@ function Home2() {
               DISCOVER WHO <span className="purple">RICHELLE IS</span>
             </h1>
             <p className="home-about-body">
-              Dynamic and seasoned in logistics and operations, I am actively
-              seeking opportunities where I can bring my extensive experience
-              and proactive approach to drive meaningful results. My
-              professional journey includes impactful roles at{" "}
-              <b className="purple">FedEx Ground</b>, where I spearheaded
-              inventory management and operational improvements.
+              With a proven track record of driving operational excellence and
+              enhancing workflow efficiencies, I am Richelle Brokaw—a highly
+              motivated and adept professional. My tenure at{" "}
+              <b className="purple">FedEx Ground</b> as an Operations
+              Administrator has equipped me with robust expertise in inventory
+              management and process optimization. My ability to spearhead
+              complex logistics tasks, while maintaining a keen eye for detail,
+              underscores my commitment to quality and productivity in
+              high-pressure environments.
               <br />
               <br />
-              My fields of interest include{" "}
-              <b className="purple">Photography and Modeling</b>, areas where I
-              blend my creativity with my strategic acumen. These passions are
-              not only hobbies but have grown into a substantial part of my
-              entrepreneurial ventures, enriching my skills in project
-              management and client relations.
+              The synergy of my professional acumen and my entrepreneurial flair
+              is best exemplified through my pursuits in{" "}
+              <b className="purple">Photography and Modeling</b>. These
+              endeavors have not only been outlets for my creative expression
+              but have also honed my project management and client engagement
+              skills, pivotal in nurturing sustainable business relationships.
               <br />
               <br />
-              As a resident of <b className="purple">Woodward Bluffs</b> and a
-              mother to two wonderful children, Kaylei and Alex, I thrive in
-              environments that require flexibility and exceptional
-              organizational skills—traits that I apply both at home and in the
-              professional sphere.
+              As a Woodwards Bluffs resident and a nurturing mother, I excel in
+              dynamic settings that demand extraordinary organizational talents
+              and adaptability—qualities that have been the cornerstone of both
+              my personal life and my diverse career, spanning administrative to
+              customer-centric roles.
               <br />
-              <br />I am eager to bring my expertise in logistics, alongside my
-              creative capabilities, to a role where innovation in{" "}
-              <b className="purple">business and administrative positions</b> is
-              valued. My skill set is further complemented by a strong
-              proficiency in handling complex scheduling, coordinating
-              multi-disciplinary teams, and leading with a customer-first
-              mindset.
+              <br />I am poised to channel this extensive background into a
+              progressive role where my blend of logistical prowess and
+              inventive energy will drive innovation, especially in{" "}
+              <b className="purple">business and administrative positions</b>.
+              My comprehensive skill set is complemented by a commitment to
+              operational safety, a talent for anticipating and resolving
+              challenges proactively, and a passion for delivering impeccable
+              customer experiences.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
