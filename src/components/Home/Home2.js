@@ -15,39 +15,48 @@ function Home2() {
               DISCOVER WHO <span className="purple">RICHELLE IS</span>
             </h1>
             <p className="home-about-body">
-              With a proven track record of driving operational excellence and
-              enhancing workflow efficiencies, I am Richelle Brokaw—a highly
-              motivated and adept professional. My tenure at{" "}
-              <b className="purple">FedEx Ground</b> as an Operations
-              Administrator has equipped me with robust expertise in inventory
-              management and process optimization. My ability to spearhead
-              complex logistics tasks, while maintaining a keen eye for detail,
-              underscores my commitment to quality and productivity in
-              high-pressure environments.
+              As a seasoned{" "}
+              <span className="purple">
+                Operations Administrator at FedEx Ground
+              </span>
+              , I strive to excel in every aspect of logistics and operations
+              management. My unwavering commitment to excellence has enabled me
+              to refine complex procedures and implement effective inventory
+              management strategies. With a meticulous approach and unwavering
+              dedication, I consistently drive productivity and efficiency, even
+              in the most challenging circumstances.
               <br />
               <br />
-              The synergy of my professional acumen and my entrepreneurial flair
-              is best exemplified through my pursuits in{" "}
-              <b className="purple">Photography and Modeling</b>. These
-              endeavors have not only been outlets for my creative expression
-              but have also honed my project management and client engagement
-              skills, pivotal in nurturing sustainable business relationships.
+              Throughout my career, I have achieved numerous professional
+              milestones, fueled by an innate entrepreneurial spirit. My
+              endeavors in{" "}
+              <span className="purple">Photography and Modeling</span> have been
+              a testament to my multifaceted expertise. These creative pursuits
+              have not only been a means of artistic expression but have also
+              provided a platform to showcase my project management skills and
+              ability to cultivate lasting client relationships. These
+              competencies are essential in building enduring professional
+              networks.
               <br />
               <br />
-              As a Woodwards Bluffs resident and a nurturing mother, I excel in
-              dynamic settings that demand extraordinary organizational talents
-              and adaptability—qualities that have been the cornerstone of both
-              my personal life and my diverse career, spanning administrative to
-              customer-centric roles.
+              Throughout my professional journey, I have honed my agility and
+              exceptional organizational capabilities through years of managing
+              diverse administrative responsibilities across various industries.
+              My versatile skill set has allowed me to thrive in environments
+              that require not only proficiency in business administration but
+              also a personalized touch in customer interactions.
               <br />
-              <br />I am poised to channel this extensive background into a
-              progressive role where my blend of logistical prowess and
-              inventive energy will drive innovation, especially in{" "}
-              <b className="purple">business and administrative positions</b>.
-              My comprehensive skill set is complemented by a commitment to
-              operational safety, a talent for anticipating and resolving
-              challenges proactively, and a passion for delivering impeccable
-              customer experiences.
+              <br />
+              With my extensive experience and solid foundation in{" "}
+              <span className="purple">logistics</span>, I am eager to embark on
+              the next chapter of my career. My creative dynamism and
+              operational safety knowledge make me a catalyst for innovation in{" "}
+              <span className="purple">
+                business and administrative domains
+              </span>
+              . I am always proactive in problem-solving, and my unwavering
+              focus on customer satisfaction sets me apart as a professional
+              ready to make a significant impact in my future endeavors.
             </p>
           </Col>
           <Col md={4} className="myAvtar">

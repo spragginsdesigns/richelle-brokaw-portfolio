@@ -10,12 +10,14 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hello, I'm <span className="purple">Richelle Brokaw</span> from{" "}
             <span className="purple">Fresno, CA</span>.
-            <br />A proud alumnus of Kaplan Institute in Medical Office
-            Assistance, I've carved a niche in logistics and operations
-            throughout an illustrious career. My journey is punctuated by
-            significant roles at leading companies and in community service,
-            where I've leveraged my talents to not only succeed professionally
-            but also enrich the lives around me.
+            <br />
+            As a distinguished graduate of Kaplan Institute in Medical Office
+            Assistance, I have established myself in the field of logistics and
+            operations through a remarkable career journey. Along the way, I
+            have held pivotal positions at renowned companies and contributed to
+            my community through dedicated service. My achievements not only
+            reflect my professional success but also embody my commitment to
+            enhancing the well-being of those around me.
           </p>
           <ul>
             <li className="about-activity">
