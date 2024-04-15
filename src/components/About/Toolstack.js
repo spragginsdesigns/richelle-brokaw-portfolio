@@ -1,30 +1,48 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
-  SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
-  SiMacos,
-} from "react-icons/si";
+  FaCalendarAlt,
+  FaCamera,
+  FaCameraRetro,
+  FaShippingFast,
+  FaUserFriends,
+} from "react-icons/fa";
+import { MdOutlineInventory2, MdOutlinePhotoCamera } from "react-icons/md";
+import { AiFillFileExcel, AiOutlineMail } from "react-icons/ai";
+import { IoIosPeople } from "react-icons/io";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        <MdOutlineInventory2 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <FaShippingFast />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <FaCalendarAlt />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
+        <AiFillFileExcel />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <FaCamera />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <MdOutlinePhotoCamera />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaCameraRetro />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <AiOutlineMail />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <IoIosPeople />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaUserFriends />
       </Col>
     </Row>
   );

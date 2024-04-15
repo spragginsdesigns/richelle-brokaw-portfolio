@@ -1,71 +1,84 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
+  FaTruckMoving,
+  FaCameraRetro,
+  FaUsers,
+  FaPalette,
+  FaRegCalendarAlt,
+  FaBriefcaseMedical,
+  FaPhotoVideo,
+  FaUserNurse,
+} from "react-icons/fa";
 import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-} from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+  MdOutlineEventNote,
+  MdLocalShipping,
+  MdInventory2,
+  MdOutlineSupervisorAccount,
+} from "react-icons/md";
+import { GiTeamUpgrade, GiBookmarklet } from "react-icons/gi";
+import { BiSpreadsheet, BiNetworkChart } from "react-icons/bi";
+import { AiOutlineCustomerService, AiOutlineMail } from "react-icons/ai";
 
-function Techstack() {
+function Skillstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <FaTruckMoving />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <MdInventory2 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <MdLocalShipping />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <FaCameraRetro />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <FaUsers />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <GiTeamUpgrade />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <MdOutlineEventNote />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <BiSpreadsheet />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <FaPalette />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+        <AiOutlineCustomerService />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <FaBriefcaseMedical />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
+        <FaPhotoVideo />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <FaUserNurse />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <GiBookmarklet />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <BiNetworkChart />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <MdOutlineSupervisorAccount />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <AiOutlineMail />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaRegCalendarAlt />
       </Col>
     </Row>
   );
 }
 
-export default Techstack;
+export default Skillstack;
