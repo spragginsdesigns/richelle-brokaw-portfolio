@@ -1,4 +1,4 @@
-# [Richelle Brokaw Portfolio]
+# Richelle Brokaw's Portfolio
 
 This portfolio is a personal website showcasing her professional accomplishments, skills, and experiences for potential employers and friends. 
 
