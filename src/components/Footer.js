@@ -13,7 +13,16 @@ function Footer() {
           <h3>Richelle Brokaw - Operations & Logistics Specialist</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} Spraggins Designs</h3>
+          <h3>
+            Copyright © {year}{" "}
+            <a
+              href="https://spragginsdesigns.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Spraggins Designs
+            </a>
+          </h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
