@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light dark;
+  --bg: #fbf7f4;
+  --surface: #ffffff;
+  --ink: #221a1d;
+  --muted: #6a5c61;
+  --accent: #a83a62;
+  --accent-ink: #ffffff;
+  --accent-soft: #f8e4eb;
+  --line: #eadfdc;
+  --tabbar-h: 4rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161213;
+    --surface: #201a1c;
+    --ink: #f5edef;
+    --muted: #b9aaaf;
+    --accent: #f29bb8;
+    --accent-ink: #2a1019;
+    --accent-soft: #37222b;
+    --line: #34292d;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-line: var(--line);
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-heading), ui-serif, Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Keeps anchored sections clear of the sticky header. */
+  scroll-padding-top: 5rem;
+  /* Keeps focused and anchored content clear of the mobile tab bar. */
+  scroll-padding-bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom));
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  /* Clears the notch when a phone is held sideways. */
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* The resume prints as one Letter page in light colors regardless of theme. */
+@page {
+  size: Letter;
+  margin: 0.6in 0.7in;
+}
+
+@media print {
+  :root {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --ink: #111111;
+    --muted: #444444;
+    --accent: #8a2c4f;
+    --accent-soft: #ffffff;
+    --line: #cccccc;
+  }
+  html {
+    font-size: 12.5px;
+  }
+  :root {
+    color-scheme: light;
+  }
+  body {
+    padding: 0 !important;
+  }
+}
