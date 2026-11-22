@@ -45,11 +45,11 @@ export function SiteHeader() {
         <a
           href={RESUME_PDF_PATH}
           download
-          className="inline-flex min-h-10 items-center gap-2 rounded-full bg-accent px-4 text-sm font-semibold text-accent-ink transition-opacity hover:opacity-90"
+          aria-label="Download résumé PDF"
+          className="inline-flex min-h-11 items-center gap-2 rounded-full border border-line bg-surface px-4 text-sm font-semibold text-ink transition-colors hover:border-accent"
         >
           <DownloadIcon className="text-base" />
-          <span>Resume</span>
-          <span className="sr-only"> (PDF download)</span>
+          <span>PDF</span>
         </a>
       </div>
     </header>

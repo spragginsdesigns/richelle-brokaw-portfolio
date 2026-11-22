@@ -6,8 +6,11 @@
  * only (see scripts/resume-pdf.mjs) so they never ship in the website's HTML.
  */
 
+export type OrganizationBrand = "fedex" | "walgreens" | "clovis-west";
+
 export type Role = {
   company: string;
+  brand?: OrganizationBrand;
   title: string;
   location: string;
   start: string;
@@ -22,6 +25,7 @@ export type SkillGroup = {
 
 export type Education = {
   school: string;
+  brand?: OrganizationBrand;
   credential: string;
   detail?: string;
 };
@@ -49,15 +53,10 @@ export const profile = {
   ],
 } as const;
 
-export const highlights: { value: string; label: string }[] = [
-  { value: "FedEx Ground", label: "Operations Administrator" },
-  { value: "HIPAA & OSHA", label: "Compliance trained" },
-  { value: "Fresno, CA", label: "Based in the Central Valley" },
-];
-
 export const experience: Role[] = [
   {
     company: "FedEx Ground",
+    brand: "fedex",
     title: "Operations Administrator",
     location: "Fresno, CA",
     start: "Sep 2021",
@@ -71,6 +70,7 @@ export const experience: Role[] = [
   },
   {
     company: "Walgreens",
+    brand: "walgreens",
     title: "Inventory Specialist (SFL)",
     location: "Fresno, CA",
     start: "Mar 2023",
@@ -147,6 +147,7 @@ export const education: Education[] = [
   },
   {
     school: "Clovis West High School",
+    brand: "clovis-west",
     credential: "High School Diploma",
     detail: "2004 - 2008",
   },

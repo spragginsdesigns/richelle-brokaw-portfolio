@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { DownloadIcon } from "@/components/Icons";
+import { OrganizationMark } from "@/components/OrganizationMark";
 import { PrintOnlyPhone } from "@/components/PrintOnlyPhone";
 import {
   education,
@@ -50,17 +51,14 @@ function ResumeSection({
 export default function ResumePage() {
   return (
     <div className="mx-auto max-w-4xl px-5 py-8 md:px-8 md:py-14 print:max-w-none print:p-0">
-      <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between print:hidden">
-        <p className="text-muted">
-          Readable here on any screen, or download the one-page PDF.
-        </p>
+      <div className="mb-5 flex justify-end print:hidden">
         <a
           href={RESUME_PDF_PATH}
           download
           className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-accent px-6 font-semibold text-accent-ink transition-opacity hover:opacity-90"
         >
-          <DownloadIcon />
-          Download PDF
+          <DownloadIcon className="text-lg" />
+          Download one-page PDF
         </a>
       </div>
 
@@ -76,13 +74,14 @@ export default function ResumePage() {
             <li>{profile.location}</li>
             <PrintOnlyPhone param="phone" as="li" />
             <li>
-              <a href={`mailto:${profile.email}`} className="break-all">
+              <a href={`mailto:${profile.email}`} className="wrap-anywhere underline underline-offset-4 hover:text-accent print:no-underline">
                 {profile.email}
               </a>
             </li>
             <li>
-              <a href={profile.linkedin} className="break-all">
-                {profile.linkedinLabel}
+              <a href={profile.linkedin} className="underline underline-offset-4 hover:text-accent print:no-underline">
+                <span className="print:hidden">LinkedIn profile</span>
+                <span className="hidden print:inline">{profile.linkedinLabel}</span>
               </a>
             </li>
           </ul>
@@ -107,7 +106,12 @@ export default function ResumePage() {
           <div className="space-y-6 print:space-y-3">
             {experience.map((role) => (
               <div key={`${role.company}-${role.start}`}>
-                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between sm:gap-4 print:flex-row print:items-baseline print:justify-between print:gap-4">
+                {role.brand && (
+                  <div className="mb-2 print:hidden">
+                    <OrganizationMark brand={role.brand} />
+                  </div>
+                )}
+                <div className="flex flex-col md:flex-row md:items-baseline md:justify-between md:gap-4 print:flex-row print:items-baseline print:justify-between print:gap-4">
                   <h3 className="font-semibold">
                     {role.title}, {role.company}
                   </h3>
@@ -129,6 +133,11 @@ export default function ResumePage() {
           <ul className="space-y-2 print:space-y-0.5">
             {education.map((item) => (
               <li key={item.school}>
+                {item.brand && (
+                  <div className="my-2 print:hidden">
+                    <OrganizationMark brand={item.brand} />
+                  </div>
+                )}
                 <span className="font-semibold">{item.school}</span>
                 <span className="text-muted">
                   {" "}

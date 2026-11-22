@@ -83,20 +83,6 @@ export const DownloadIcon = (props: IconProps) => (
   </Stroke>
 );
 
-export const PinIcon = (props: IconProps) => (
-  <Stroke {...props}>
-    <path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.900 7 11 7 11z" />
-    <circle cx="12" cy="10" r="2.5" />
-  </Stroke>
-);
-
-export const ArrowIcon = (props: IconProps) => (
-  <Stroke {...props}>
-    <path d="M5 12h14" />
-    <path d="m13 6 6 6-6 6" />
-  </Stroke>
-);
-
 export const LinkedInIcon = (props: IconProps) => (
   <Solid {...props}>
     <path d="M20.45 20.45h-3.56v-5.570c0-1.330-.02-3.040-1.850-3.040-1.850 0-2.140 1.450-2.140 2.940v5.670H9.350V9h3.410v1.560h.05c.48-.9 1.640-1.850 3.370-1.850 3.600 0 4.270 2.370 4.270 5.460zM5.340 7.430a2.060 2.060 0 1 1 0-4.130 2.060 2.060 0 0 1 0 4.130zM7.120 20.450H3.560V9h3.560zM22.220 0H1.770C.79 0 0 .77 0 1.730v20.540C0 23.230.79 24 1.770 24h20.450c.98 0 1.780-.77 1.780-1.730V1.730C24 .77 23.200 0 22.220 0z" />
