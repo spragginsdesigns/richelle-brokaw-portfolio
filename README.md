@@ -52,4 +52,4 @@ Replace `public/images/richelle-headshot.jpg` with a square image and update the
 
 Site by [Spraggins Designs](https://spragginsdesigns.xyz). The first version of this site (2024) was based on the [portfolio template by Soumyajit Behera](https://github.com/soumyajit4419/Portfolio); version 2 is a full rewrite.
 
-Organization marks in `public/brands/` come from [FedEx](https://www.fedex.com/content/dam/fedex-com/logos/FedEx-Logo.png), [Walgreens Careers](https://jobs.walgreens.com/en/sitemap), and [Clovis West High School](https://cwhs.cusd.com/). Interface icons are from [Lucide](https://lucide.dev/).
+Organization marks in `public/brands/` come from [FedEx](https://www.fedex.com/content/dam/fedex-com/logos/FedEx-Logo.png), [Walgreens Careers](https://jobs.walgreens.com/en/sitemap), [Clovis West High School](https://cwhs.cusd.com/), and [Woodward Bluffs Estates](https://www.woodwardbluffsestates.com/about). Interface icons are from [Lucide](https://lucide.dev/).

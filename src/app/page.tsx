@@ -312,9 +312,13 @@ function Background() {
             key={item.organization}
             className="rounded-3xl border border-line bg-surface p-6"
           >
-            <span className={iconTile}>
-              <HandHeart aria-hidden="true" size={22} />
-            </span>
+            {item.brand ? (
+              <OrganizationMark brand={item.brand} />
+            ) : (
+              <span className={iconTile}>
+                <HandHeart aria-hidden="true" size={22} />
+              </span>
+            )}
             <h3 className="mt-3 font-display text-xl font-semibold">
               {item.role}
             </h3>

@@ -5,6 +5,7 @@ const marks = {
   fedex: { width: 1033, height: 504, displayWidth: 117 },
   walgreens: { width: 322, height: 72, displayWidth: 102 },
   "clovis-west": { width: 943, height: 441, displayWidth: 73 },
+  "woodward-bluffs-estates": { width: 220, height: 165, displayWidth: 60 },
 } satisfies Record<OrganizationBrand, { width: number; height: number; displayWidth: number }>;
 
 export function OrganizationMark({ brand }: { brand: OrganizationBrand }) {

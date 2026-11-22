@@ -6,7 +6,11 @@
  * only (see scripts/resume-pdf.mjs) so they never ship in the website's HTML.
  */
 
-export type OrganizationBrand = "fedex" | "walgreens" | "clovis-west";
+export type OrganizationBrand =
+  | "fedex"
+  | "walgreens"
+  | "clovis-west"
+  | "woodward-bluffs-estates";
 
 export type Role = {
   company: string;
@@ -28,6 +32,14 @@ export type Education = {
   brand?: OrganizationBrand;
   credential: string;
   detail?: string;
+};
+
+type VolunteerRole = {
+  organization: string;
+  brand?: OrganizationBrand;
+  role: string;
+  start: string;
+  end: string;
 };
 
 export const SITE_URL = "https://richelle-brokaw-portfolio.vercel.app";
@@ -153,9 +165,10 @@ export const education: Education[] = [
   },
 ];
 
-export const volunteer = [
+export const volunteer: VolunteerRole[] = [
   {
     organization: "Woodward Bluffs Activities Committee",
+    brand: "woodward-bluffs-estates",
     role: "Board Member",
     start: "Jan 2023",
     end: "Present",
